@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<header
+  className="header-color"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="header-color__content"
+    >
+      <Link
+        className="header-color__title"
+        replace={false}
+        to="/dashboard"
+      >
+        <h1>
+           shopping 
+        </h1>
+      </Link>
+      <button
+        className="button-color button-merge"
+        onClick={[Function]}
+      >
+        Logout 
+      </button>
+    </div>
+  </div>
+</header>
+`;
