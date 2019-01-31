@@ -1,0 +1,25 @@
+.quantity-button{
+  display:flex;
+  flex-direction: row;
+  height: 5vh;
+  width:  5vw;
+}
+
+.quantity-input{
+  
+  height: 5vh;
+  width:  5vw;
+}
+
+.remove_button{
+  background: rgb(43, 133, 125); 
+    border: none;
+    color: white;
+    display: inline-block;
+    line-height: 1;
+    padding: 15px 32px;
+    font-size: $font-size-large;
+    text-decoration: none;
+    height: 5vh;
+  width:  5vw;
+}

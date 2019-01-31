@@ -8,7 +8,6 @@ export const LoginPage=(props)=>(
       <h1 className="box-layout__title"> shopping cart</h1>
      <button className="button-color" onClick={props.startLogin}>Login with Google</button>
     </div>
-        
       </div>
 );
 
