@@ -27,7 +27,9 @@ class ProductsInCart extends React.Component{
       };
 
 render(){
-    return(<div className="prod">
+    return(
+      
+    <div className="prod">
     <h3>{this.props.title}</h3>
     <div className="productInCart">
     <img 
@@ -45,8 +47,8 @@ render(){
       />
     <button onClick={this.quantityInc} >+</button>
     </form>
-    <button className="button-color" onClick={this.onRemove}>Remove</button>
-    {this.props.total}
+    <button className="button-color__remove" onClick={this.onRemove}>Remove</button>
+   <h2> {this.props.total} </h2>
     </div>
 </div>);
 

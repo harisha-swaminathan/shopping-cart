@@ -1,17 +1,21 @@
 @import './base/settings';
 @import './base/base';
-@import './components/box-layout';
-@import './components/button-color';
-@import './components/header-color';
 @import './components/container';
-@import './components/page-header';
+@import './components/eachprod';
+@import './components/box-layout'; 
+@import './components/button-color'; 
+@import './components/form';
+@import './components/header-color'; 
 @import './components/input';
 @import './components/input-group';
-@import './components/form';
-@import './components/visibility';
 @import './components/list';
+@import './components/logo';
 @import './components/loader';
-@import './components/eachprod';
 @import './components/modal';
+@import './components/page-header';
 @import './components/quantityButton';
 @import './components/summary-bottom';
+@import './components/visibility';
+
+
+

@@ -4,16 +4,17 @@ import ProductsInCart from './ProductsInCart';
 import TotalSummary from './TotalSummary';
 import LoggedInHeader from './LoggedInHeader';
 export const Cart = (props) => (
-  
-  
+   <div >
+     <LoggedInHeader/>
     <div className="container"> 
-    <h3>Summary</h3> 
-      <div className="list-header">
+    <h1>Summary</h1>
+    <div className="list-header">
     <div className="visible-desktop">Product</div>
     <div className="visible-desktop">Quantity</div>
     <div className="visible-desktop">Remove</div>
     <div className="visible-desktop">Price</div>
     </div>
+    
   <div className="list-bottom">
     {
       props.products.length === 0 ? (
@@ -31,12 +32,14 @@ export const Cart = (props) => (
     <div className="summary-heading">
     <h3 >Total</h3>
     <TotalSummary/>
-    <button>Checkout</button>
+    <button  className="button-color__remove">Checkout</button>
     </div>
     </div>
   </div>
+   </div>
   
 );
+
 
 const mapStateToProps = (state) => {
   return {

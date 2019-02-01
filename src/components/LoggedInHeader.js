@@ -6,9 +6,12 @@ export const LoggedInHeader = ({startLogout}) => (
   <header className="header-color">
   <div className="container">
   <div className="header-color__content">
-  <h1 className="header-color__title">  shopping </h1>
+  <Link to="/dashboard"><img alt="book" src="logo.png" className="logo"/></Link>
+  <h2 className="header-color__title" > Your one stop shop for front end development </h2>
+  <div className="header-color__right">
+  <Link to="/cart"><img alt="cart" src="cart.png" className="logo_cart"/></Link>
   <button className="button-color" onClick={startLogout}>Logout </button>
- <Link className="button-color" to="/cart"><h1> cart </h1></Link>     {/* please add an icon to this and fix the spacing*/ }
+  </div>
     </div>
     </div>
   </header>

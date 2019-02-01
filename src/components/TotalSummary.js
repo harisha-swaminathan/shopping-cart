@@ -12,7 +12,7 @@ class TotalSummary extends React.Component{
      return (
        
      <div className="summary-bottom">
-    <h3> {total}</h3>
+    <h3 > {total}</h3>
    </div>
          
      );

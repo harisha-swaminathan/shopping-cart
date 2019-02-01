@@ -7,9 +7,6 @@ console.log(storeProducts);
 const ProductsPage=()=>(
     <div className="container">
         <Header/>
-       
-
-        <h1>Page with the products</h1>
         <ProductList products={storeProducts}/>
     </div>
 );

@@ -7,9 +7,8 @@ export const Header = ({startLogin,auth,startLogout}) => (
   <header className="header-color">
   <div className="container">
   <div className="header-color__content">
-    <Link className="header-color__title" to="/dashboard"><h1> shopping </h1></Link>
-   {/* <button className="button-color button-merge" onClick={startLogout}>Logout </button>*/}
-  {/* <button className="button-color" onClick={startLogin}>Login</button>*/}
+  <Link to="/dashboard"><img alt="book" src="logo.png" className="logo"/></Link>
+    <h2 className="header-color__title" > Your one stop shop for front end development </h2>
   {!!auth.id?(<button className="button-color" onClick={startLogout}>Logout</button>):null}
    {!!auth.id?null:(<button className="button-color" onClick={startLogin}>Login </button>)}
     </div>

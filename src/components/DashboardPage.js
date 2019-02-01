@@ -5,7 +5,6 @@ import {storeProducts} from '../fixtures/products';
 const DashboardPage = () => (
   <div>
     <LoggedInHeader/>
-      <h1>shows same product page with different Header</h1>
       <ProductList products={storeProducts}/>
   </div>
 );

@@ -1,5 +1,5 @@
 .header-color{
-    background: rgb(40, 77, 73); 
+    background: rgb(149, 209, 203); 
 }
 .header-color__title{
     
@@ -13,6 +13,14 @@
     align-items: center;
     display:flex;
     justify-content: space-evenly;
-    padding:$s-size
+    padding:$m-size
+
+}
+.header-color__right{
+    max-width: 125rem;
+    align-items: center;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:row;
 
 }
