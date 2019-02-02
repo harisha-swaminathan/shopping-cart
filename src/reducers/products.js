@@ -29,6 +29,9 @@ export default (state = productsReducerDefaultState, action) => {
 
       case 'SET_PRODUCTS':
     return action.products;
+
+    case 'REMOVE_ALL':
+    return state=[];
     
     default:
       return state;

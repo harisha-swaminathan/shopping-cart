@@ -97,4 +97,19 @@ export const startEditProduct=(pid,count,total)=>{
   }
 }
 
+//Remove_all
+
+export const removeAll = () => ({
+  type: 'REMOVE_ALL'
+  
+});
+
+export const startRemoveAll=()=>{
+  return (dispatch,getState) => {
+    const uid=getState().auth.uid;
+    return database.ref(`users/${uid}/products`).remove().then(() => {
+      dispatch(removeAll());
+    })
+  }; 
+}
 

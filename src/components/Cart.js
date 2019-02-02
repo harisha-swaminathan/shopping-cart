@@ -2,12 +2,19 @@ import React from 'react';
 import { connect } from 'react-redux';
 import ProductsInCart from './ProductsInCart';
 import TotalSummary from './TotalSummary';
+import {startRemoveAll} from '../actions/products';
 import Header from './Header';
-export const Cart = (props) => (
-   <div >
+export class Cart extends React.Component{
+  onRemoveAll = () => {
+    console.log('gets called');
+    this.props.startRemoveAll();
+  };
+  render(){
+    return(
+      <div >
+        <div className="container"> 
      <Header/>
-    <div className="container"> 
-    <h1>Summary</h1>
+    <h1> Cart Summary</h1>
     <div className="list-header">
     <div className="visible-desktop">Product</div>
     <div className="visible-desktop">Quantity</div>
@@ -17,14 +24,14 @@ export const Cart = (props) => (
     
   <div className="list-bottom">
     {
-      props.products.length === 0 ? (
+      this.props.products.length === 0 ? (
         <div> 
           <span className=" list-item list-item--empty">
            No Products in cart
           </span>
         </div>
       ) : (
-          props.products.map((product) => {
+          this.props.products.map((product) => {
             return <ProductsInCart key={product.pid} {...product} />;
           })
         )
@@ -32,14 +39,18 @@ export const Cart = (props) => (
     <div className="summary-heading">
     <h3 >Total</h3>
     <TotalSummary/>
-    <button  className="button-color__remove">Checkout</button>
+  <button  disabled={(this.props.products.length === 0)?true:false} className="button-color__remove" onClick={this.onRemoveAll}>Checkout</button>
     </div>
     </div>
   </div>
    </div>
-  
-);
+    );
+  }
+}
 
+const mapDispatchToProps = (dispatch) => ({
+  startRemoveAll: () => dispatch(startRemoveAll())
+});
 
 const mapStateToProps = (state) => {
   return {
@@ -47,4 +58,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(Cart);
+export default connect(mapStateToProps,mapDispatchToProps)(Cart);

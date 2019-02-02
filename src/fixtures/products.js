@@ -1,7 +1,7 @@
 export const storeProducts = [
   {
     id: 1,
-    title: "The road to learn react",
+    title: "The Road to learn React",
     img: "product1.jpg",
     price: 10,
     author: "Robin Wieruch",
@@ -18,7 +18,7 @@ export const storeProducts = [
     price: 16,
     author: "Sam Slotsky",
     description:
-      "gg",
+      "The book starts with a short introduction to the principles and the ecosystem of Redux, then moves on to show how to implement the basic elements of Redux and put them together. Afterward, you are going to learn how to integrate Redux with other frameworks, such as React and AngularAlong the way, you are going to develop a blog application. To practice developing growing applications with Redux, we are going to start from nothing and keep adding features to our application throughout the book. You are going to learn how to integrate and use Redux DevTools to debug applications, and access external APIs with Redux. You are also going to get acquainted with writing tests for all elements of a Redux application. Furthermore, we are going to cover important concepts in web development, such as routing, user authentication, and communication with a backend server After explaining how to use Redux and how powerful its ecosystem can be, the book teaches you how to make your own abstractions on top of Redux, such as higher-order reducers and middleware. By the end of the book, you are going to be able to develop and maintain Redux applications with ease. In addition to learning about Redux, you are going be familiar with its ecosystem, and learn a lot about JavaScript itself, including best practices and patterns.",
     inCart: false,
     count: 0,
     total: 16
@@ -73,8 +73,7 @@ export const storeProducts = [
   },
   {
     id: 7,
-    title: "Learning JavaScript Design",
-    //Patterns
+    title: "Learning JavaScript Design Patterns",
     img: "product7.jpg",
     price: 10,
     author: "Addy Osmani",
@@ -86,8 +85,7 @@ export const storeProducts = [
   },
   {
     id: 8,
-    title: "JavaScript for..",
-    // impatient programmers",
+    title: "JavaScript for impatient programmers",
     img: "product8.jpg",
     price: 16,
     author: "Dr. Axel Rauschmayer",
@@ -99,9 +97,7 @@ export const storeProducts = [
   },
   {
     id: 9,
-    title: "JavaScript: Advanced..",
-    // JavaScript
-   // Coding From The Ground Up",
+    title: "JavaScript: Advanced JavaScript Coding From The Ground Up",
     img: "product9.jpg",
     price: 18,
     author:"Keith Dvorjak",

@@ -52,17 +52,16 @@ export class ProductItem extends React.Component {
        <div>${this.props.product.price}</div>
        <div className="eachbutton">
        <button disabled={(!this.state.Added || !this.state.LoggedIn)?false:true} onClick={this.onClickAdd} >Add to cart </button>
-    {/* {this.state.Incart?(< AddedModal />):null} */}  
-    {/* {this.state.AddToCart?(< LoginModal open={this.state.Modal} ClearSelectedOption={this.ClearSelectedOption}/>):null} */}
         <button onClick={this.onClick}  >Quickview</button>
+       </div>
         {this.state.QuickView?(< QuickView selectedOption={this.props.product} 
         />):null}
        </div>
-      </div>
     );
   }
 };
-
+{/* {this.state.Incart?(< AddedModal />):null} */}  
+    {/* {this.state.AddToCart?(< LoginModal open={this.state.Modal} ClearSelectedOption={this.ClearSelectedOption}/>):null} */}
 const mapStateToProps = (state,props) => ({
   auth: state.auth,
   products:state.products.find((product) => product.id === props.product.id)

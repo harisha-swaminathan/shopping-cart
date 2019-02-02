@@ -21,17 +21,22 @@ class QuickView extends React.Component {
       closeTimeoutMS={200}
       className="modal"
     >
-      <h3>{this.props.selectedOption.title}</h3>
+     <div className="modal">
+     <h3 className="modal__title">{this.props.selectedOption.title}</h3>
          <div >
          <img 
-         height={300}
+         height={100}
          title={this.props.selectedOption.title}
          src={this.props.selectedOption.img}
          />
          </div>
-        <div>{this.props.selectedOption.description}</div>
-         <div>${this.props.selectedOption.price}</div>
-         <button className="button" onClick={this.ClearSelectedOption}>Close</button>
+         <div className="modal-scroll">
+         <p className="modal__body">{this.props.selectedOption.description}</p>
+         </div>
+         <h2 className="modal__title">${this.props.selectedOption.price}</h2>
+         <button className="button-color" onClick={this.ClearSelectedOption}>Close</button>
+     </div>
+     
     </Modal>
     );
   }
