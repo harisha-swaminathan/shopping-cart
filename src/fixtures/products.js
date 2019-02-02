@@ -86,8 +86,8 @@ export const storeProducts = [
   },
   {
     id: 8,
-    title: "JavaScript for",
-    //impatient programmers
+    title: "JavaScript for..",
+    // impatient programmers",
     img: "product8.jpg",
     price: 16,
     author: "Dr. Axel Rauschmayer",
@@ -99,8 +99,9 @@ export const storeProducts = [
   },
   {
     id: 9,
-    title: "JavaScript: Advanced JavaScript",
-    // Coding From The Ground Up
+    title: "JavaScript: Advanced..",
+    // JavaScript
+   // Coding From The Ground Up",
     img: "product9.jpg",
     price: 18,
     author:"Keith Dvorjak",

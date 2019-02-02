@@ -1,6 +1,12 @@
 .container{
-    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 30px;
+    margin-left: 30px;
     padding: 0 $l-size ;
     max-width: 500rem;
     
+}
+.container_products{
+    margin:60px;
 }

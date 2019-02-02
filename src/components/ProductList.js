@@ -4,7 +4,7 @@ class ProductList extends React.Component {
     render() {
         
       return (
-        <div className="container">
+        <div >
         <div className="eachprod">
         {
             this.props.products.map((prod)=>(

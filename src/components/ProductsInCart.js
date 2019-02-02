@@ -28,8 +28,8 @@ class ProductsInCart extends React.Component{
 
 render(){
     return(
-      
-    <div className="prod">
+      // 
+    <div className="prod__cart">
     <h3>{this.props.title}</h3>
     <div className="productInCart">
     <img 

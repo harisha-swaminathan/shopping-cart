@@ -6,6 +6,7 @@ import LoginModal from './LoginModal';
 import AddedModal from './AddedModal';
 export class ProductItem extends React.Component {
   state={
+    LoggedIn:!!this.props.auth.uid,
     QuickView:false,
     AddToCart:false,
     Added:!!this.props.products,
@@ -18,6 +19,7 @@ export class ProductItem extends React.Component {
   })
   };
   onClickAdd=()=>{
+    console.log(this.props.products)
     if(this.props.auth.uid){
     this.props.startAddProduct(this.props.product);
     this.setState({
@@ -40,7 +42,6 @@ export class ProductItem extends React.Component {
   render() {
     return (
       <div className="prod">
-      <h3>{this.props.product.title}</h3>
        <div className="zoom">
        <img 
        height={300}
@@ -50,9 +51,9 @@ export class ProductItem extends React.Component {
        </div>
        <div>${this.props.product.price}</div>
        <div className="eachbutton">
-        <button disabled={!!this.state.Added?true:false} onClick={this.onClickAdd} >Add to cart </button>
+       <button disabled={(!this.state.Added || !this.state.LoggedIn)?false:true} onClick={this.onClickAdd} >Add to cart </button>
     {/* {this.state.Incart?(< AddedModal />):null} */}  
-     {this.state.AddToCart?(< LoginModal open={this.state.Modal} ClearSelectedOption={this.ClearSelectedOption}/>):null} 
+    {/* {this.state.AddToCart?(< LoginModal open={this.state.Modal} ClearSelectedOption={this.ClearSelectedOption}/>):null} */}
         <button onClick={this.onClick}  >Quickview</button>
         {this.state.QuickView?(< QuickView selectedOption={this.props.product} 
         />):null}

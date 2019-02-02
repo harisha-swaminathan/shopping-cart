@@ -9,8 +9,11 @@ export const Header = ({startLogin,auth,startLogout}) => (
   <div className="header-color__content">
   <Link to="/dashboard"><img alt="book" src="logo.png" className="logo"/></Link>
     <h2 className="header-color__title" > Your one stop shop for front end development </h2>
-  {!!auth.id?(<button className="button-color" onClick={startLogout}>Logout</button>):null}
-   {!!auth.id?null:(<button className="button-color" onClick={startLogin}>Login </button>)}
+    <div className="header-color__right">
+  {!!auth.uid?((<Link to="/cart"><img alt="cart" src="cart.png" className="logo_cart"/></Link>)):null}
+  {!!auth.uid?(<button className="button-color" onClick={startLogout}>Logout</button>):null}
+   {!!auth.uid?null:(<button className="button-color" onClick={startLogin}>Login </button>)}
+   </div>
     </div>
     </div>
   </header>
@@ -26,3 +29,8 @@ const mapDispatchToProps=(dispatch)=>({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
+
+  
+  
+
+

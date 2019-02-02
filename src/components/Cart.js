@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import ProductsInCart from './ProductsInCart';
 import TotalSummary from './TotalSummary';
-import LoggedInHeader from './LoggedInHeader';
+import Header from './Header';
 export const Cart = (props) => (
    <div >
-     <LoggedInHeader/>
+     <Header/>
     <div className="container"> 
     <h1>Summary</h1>
     <div className="list-header">
