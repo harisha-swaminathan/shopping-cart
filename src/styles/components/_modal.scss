@@ -18,31 +18,38 @@
   }
   
   .modal {
-    background: rgb(149, 209, 203); 
+    background:  rgb(149, 209, 203); 
     color: black;
-    max-width: 30rem;
-    max-height: 70rem;
+    width: 50rem;
+    height: 65rem;
     outline: none;
     padding: $l-size;
     text-align: center;
   }
   
-  .modal__title {
+  .modal_title {
     margin: 0 0 $m-size 0;
+    word-break: break-word;
+
   }
   
-  .modal__body {
+  .modal_body {
     font-size: 2rem;
-    font-weight: 300;
-    margin: 0 0 $l-size 0;
+    font-weight: 100;
+    margin: 0 0 2rem 0;
     word-break: break-word;
-    align-self: auto
   }
-  .modal-scroll{
-    background: rgb(149, 209, 203); 
-    align-content: flex-start;
-    max-height: 20rem;
-    max-width: 30rem;
+  .modal__scroll{
+    padding: $l-size;
+    background: rgba(149, 209, 203, 0); 
+    margin-left: 7rem;
+    align-items: center;
+    height: 20rem;
+    width: 30rem;
     overflow: scroll;
+  }
+
+  .modal_position{
+    align-items: center;
   }
   

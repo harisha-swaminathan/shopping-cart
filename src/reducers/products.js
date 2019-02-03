@@ -14,7 +14,6 @@ export default (state = productsReducerDefaultState, action) => {
      return state.filter(({ pid }) => pid !== action.pid);
 
      case 'EDIT_PRODUCT':
-    console.log('reducre');
      return state.map((product) => {
        if (product.pid === action.pid) {
          return {

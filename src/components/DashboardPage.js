@@ -7,7 +7,7 @@ const DashboardPage = () => (
   <div className="container">
     <Header/>
     <ProductFilter/>
-      <ProductList products={storeProducts}/>
+    <ProductList products={storeProducts}/>
   </div>
 );
 

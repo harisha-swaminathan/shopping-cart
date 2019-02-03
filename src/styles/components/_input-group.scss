@@ -9,9 +9,9 @@
     }
 }
 .input-group__item{
-    margin-bottom:$s-size;
-    
+   
     @media (min-width:$desktop){
         margin: 0 $m-size 0 0;
     }
+    
 }

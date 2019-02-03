@@ -26,7 +26,7 @@ export class ProductFilters extends React.Component {
             />
           </div>
           <div className="input-group__item">
-            <select className="select"
+          <select className="select"
               value={this.props.filters.sortBy}
               onChange={this.onSortChange}>
               <option value="high">High to Low</option>
