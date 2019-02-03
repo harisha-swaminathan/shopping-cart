@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductItem from './ProductItem';
 import { connect } from 'react-redux';
-import filterProducts from '../selectors/products';
+import filterProducts from '../selectors/Products';
 import {storeProducts} from '../fixtures/products';
 class ProductList extends React.Component {
     render() {
