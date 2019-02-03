@@ -1,5 +1,8 @@
 import React from 'react';
 import ProductItem from './ProductItem';
+import { connect } from 'react-redux';
+import filterProducts from '../selectors/products';
+import {storeProducts} from '../fixtures/products';
 class ProductList extends React.Component {
     render() {
         
@@ -16,5 +19,10 @@ class ProductList extends React.Component {
       );
     }
   };
-
-export default ProductList;
+  const mapStateToProps = (state) => {
+    return {
+      products: filterProducts(storeProducts, state.filters)
+    };
+  };
+  
+  export default connect(mapStateToProps)(ProductList);

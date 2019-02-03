@@ -15,7 +15,7 @@ export const storeProducts = [
     id: 2,
     title: "Learning Redux ",
     img: "product2.jpg",
-    price: 16,
+    price: 13,
     author: "Sam Slotsky",
     description:
       "The book starts with a short introduction to the principles and the ecosystem of Redux, then moves on to show how to implement the basic elements of Redux and put them together. Afterward, you are going to learn how to integrate Redux with other frameworks, such as React and AngularAlong the way, you are going to develop a blog application. To practice developing growing applications with Redux, we are going to start from nothing and keep adding features to our application throughout the book. You are going to learn how to integrate and use Redux DevTools to debug applications, and access external APIs with Redux. You are also going to get acquainted with writing tests for all elements of a Redux application. Furthermore, we are going to cover important concepts in web development, such as routing, user authentication, and communication with a backend server After explaining how to use Redux and how powerful its ecosystem can be, the book teaches you how to make your own abstractions on top of Redux, such as higher-order reducers and middleware. By the end of the book, you are going to be able to develop and maintain Redux applications with ease. In addition to learning about Redux, you are going be familiar with its ecosystem, and learn a lot about JavaScript itself, including best practices and patterns.",
@@ -27,7 +27,7 @@ export const storeProducts = [
     id: 3,
     title: "React up & running",
     img: "product3.jpg",
-    price: 8,
+    price: 15,
     author: "Stoyan Stefanov",
     description:
       "Hit the ground running with React, the open-source technology from Facebook for building rich web applications fast. With this practical guide, Yahoo! web developer Stoyan Stefanov teaches you how to build components—React’s basic building blocks—and organize them into maintainable, large-scale apps. If you’re familiar with basic JavaScript syntax, you’re ready to get started.",
@@ -51,7 +51,7 @@ export const storeProducts = [
     id: 5,
     title: "HTML5 and CSS3",
     img: "product5.jpg",
-    price: 15,
+    price: 8,
     author: "Elizabeth castro",
     description:
       "Need to learn HTML and CSS fast? This best-selling reference's visual format and step-by-step, task-based instructions will have you up and running with HTML in no time. In this updated edition author Bruce Hyslop uses crystal-clear instructions and friendly prose to introduce you to all of today's HTML and CSS essentials. The book has been refreshed to feature current web design best practices. You'll learn how to design, structure, and format your website. You'll learn about the new elements and form input types in HTML5. You'll create and use images, links, styles, and forms; and you'll add video, audio, and other multimedia to your site. You'll learn how to add visual effects with CSS3. You'll understand web standards and learn from code examples that reflect today's best practices. Finally, you will test and debug your site, and publish it to the web. Throughout the book, the author covers all of HTML and offers essential coverage of HTML5 and CSS techniques.",
@@ -75,7 +75,7 @@ export const storeProducts = [
     id: 7,
     title: "Learning JavaScript Design Patterns",
     img: "product7.jpg",
-    price: 10,
+    price: 7,
     author: "Addy Osmani",
     description:
       "Explore many popular design patterns, including Modules, Observers, Facades, and Mediators. Learn how modern architectural patterns--such as MVC, MVP, and MVVM--are useful from the perspective of a modern web application developer. This book also walks you through modern module formats, how to namespace code effectively, and other essential topics: Learn the structure of design patterns and how they are written; Understand different pattern categories, including creational, structural, and behavioral; Walk through more than 20 classical and modern design patterns in JavaScript.",
@@ -111,7 +111,7 @@ export const storeProducts = [
     title: "Sass for Web Designers",
     img: "product10.png",
     author:"",
-    price: 16,
+    price: 21,
     author: "Dan Cederholm",
     description:
       "Let's face it: CSS is hard. Our stylesheets are more complex than they used to be, and we're bending the spec to do as much as it can. Can Sass help? A reluctant convert to Sass, Dan Cederholm shares how he came around to the popular CSS pre-processor, and provides a clear-cut path to taking better control of your code (all the while working the way you always have). From getting started to advanced techniques, Dan will help you level up your stylesheets and instantly start taking advantage of the power of Sass",

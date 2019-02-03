@@ -38,14 +38,14 @@ render(){
     src={this.props.img}
     />
     <form className="quantity-button">
-    <button onClick={this.quantityDec} >-</button>
+    <button className="quantity-button__color"  onClick={this.quantityDec} >-</button>
     <input
      className="quantity-input" 
      type="number"
       id={`quantity ${this.props.id}`}
       value={this.props.count}
       />
-    <button onClick={this.quantityInc} >+</button>
+    <button className="quantity-button__color" onClick={this.quantityInc} >+</button>
     </form>
     <button className="button-color__remove" onClick={this.onRemove}>Remove</button>
    <h2> {this.props.total} </h2>

@@ -1,11 +1,12 @@
 import React from 'react';
-import LoggedInHeader from './LoggedInHeader';
 import Header from './Header';
+import ProductFilter from './ProductFilter';
 import ProductList from './ProductList';
 import {storeProducts} from '../fixtures/products';
 const DashboardPage = () => (
   <div className="container">
     <Header/>
+    <ProductFilter/>
       <ProductList products={storeProducts}/>
   </div>
 );
