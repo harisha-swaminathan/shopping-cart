@@ -22,9 +22,9 @@
 
   .eachbutton{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content: space-between;
-    color: rgb(43, 133, 125); 
+    border: none;
   }
 
   .productInCart{

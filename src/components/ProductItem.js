@@ -33,12 +33,11 @@ export class ProductItem extends React.Component {
        <div>${this.props.product.price}</div>
        <div className="eachbutton">
        <div className="tooltip">
-       <button className="tooltip" disabled={(!this.state.Added||!this.state.LoggedIn)?false:true} onClick={this.onClickAdd} >Add to cart </button>
+       <button disabled={(!this.state.Added||!this.state.LoggedIn)?false:true} onClick={this.onClickAdd} >Add to cart </button>
        {!this.state.LoggedIn&&(<span className="tooltiptext">Login to add</span>)}
        </div>
         <button onClick={this.onClick}> Quickview </button>
-        {this.state.QuickView &&(< QuickView selectedOption={this.props.product} 
-        />)}
+        {this.state.QuickView &&(< QuickView selectedOption={this.props.product} />)}
        </div>
        </div>
     );

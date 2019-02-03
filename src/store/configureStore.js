@@ -16,10 +16,6 @@ export default () => {
    composeEnhancers(applyMiddleware(thunk))
    
   );
-  const unsubscribe = store.subscribe(() => {
-    console.log('from config store');
-    console.log(store.getState());
-  });
   
   return store;
 };

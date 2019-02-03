@@ -11,7 +11,7 @@ class ProductList extends React.Component {
         <div className="eachprod">
         {
             this.props.products.map((prod)=>(
-                <ProductItem key={prod.pid} product={prod}/>
+                <ProductItem key={prod.id} product={prod}/>
             ))
         }
         </div>
