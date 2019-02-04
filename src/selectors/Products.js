@@ -2,7 +2,7 @@
 
 export default (products, { text, sortBy}) => {
   return products.filter((product) => {
-    const textMatch = product.title.toLowerCase().includes(text.toLowerCase());
+    const textMatch = (product.title.toLowerCase().includes(text.toLowerCase())||product.author.toLowerCase().includes(text.toLowerCase()));
     return textMatch;
   }).sort((a, b) => {
     if (sortBy === 'high') {
