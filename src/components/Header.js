@@ -12,7 +12,7 @@ export const Header = ({startLogin,auth,startLogout}) => (
     <div className="header-color__right">
   {!!auth.uid?((<Link to="/cart"><img alt="cart" src="cart.png" className="logo_cart"/></Link>)):null}
   {!!auth.uid?(<button className="button-color" onClick={startLogout}>Logout</button>):null}
-   {!!auth.uid?null:(<button className="button-color" onClick={startLogin}>Login </button>)}
+   {!!auth.uid?null:(<button className="button-color" onClick={startLogin}>Login with Google</button>)}
    </div>
     </div>
     </div>
